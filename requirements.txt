@@ -1,0 +1,12 @@
+requests
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+lightgbm
+matplotlib
+seaborn
+plotly
+folium
+joblib
+st-dbscan

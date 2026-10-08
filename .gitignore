@@ -1,0 +1,8 @@
+# Data is large: share via Google Drive, not GitHub
+data/**/*.csv
+models/*.joblib
+video/
+*.mp4
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
