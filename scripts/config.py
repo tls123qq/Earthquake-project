@@ -14,14 +14,12 @@ FIG_DPI      = 200
 # --- Paths (so every notebook reads/writes the same files) ---
 ROOT          = Path(__file__).resolve().parents[1]
 DATA_RAW      = ROOT / "data" / "raw"
-DATA_LIVE     = ROOT / "data" / "live"
 DATA_PROC     = ROOT / "data" / "processed"
 MODELS_DIR    = ROOT / "models"
 FIGURES_DIR   = ROOT / "figures"
 RESULTS_DIR   = ROOT / "results"
 
-RAW_FILE      = DATA_RAW  / "quakes_m45_raw.csv"
-LIVE_FILE     = DATA_LIVE / "live_quakes.csv"
+RAW_FILE      = DATA_RAW  / "quakes_m45_raw.csv"   # history + live in one file (usgs_fetch.py)
 SAMPLE_FILE   = DATA_PROC / "quakes_sample.csv"
 CLEAN_FILE    = DATA_PROC / "quakes_clean.csv"
 FEATURES_FILE = DATA_PROC / "cell_month_features.csv"

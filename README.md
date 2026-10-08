@@ -16,8 +16,8 @@ from config import *
 
 ## Layout
 ```
-scripts/    usgs_history.py, usgs_live.py, config.py
-data/raw/   raw download (Step 2)        data/live/  live feed (Step 1)
+scripts/    usgs_fetch.py, config.py
+data/raw/   quakes_m45_raw.csv = history + live in one file (Step 1-2), backup/
 data/processed/  quakes_sample.csv, quakes_clean.csv, cell_month_features.csv
 notebooks/  01_download ... 07_live_demo (one step = one notebook)
 models/     saved models (.joblib)       figures/  stepX_name.png
@@ -34,7 +34,7 @@ docs/       data_dictionary.md           slides/ report/ video/
 
 ## Commands
 ```
-python scripts/usgs_live.py --out data/live/live_quakes.csv          # Step 1, keep running (not Colab)
-python scripts/usgs_history.py --start 2025-01-01 --end 2026-01-01 --minmag 4.5 --out data/raw/test_2025.csv
-python scripts/usgs_history.py --start 2000-01-01 --minmag 4.5 --out data/raw/quakes_m45_raw.csv
+python scripts/usgs_fetch.py --loop 300   # Step 1-2, keep running (not Colab), every 5 min
+python scripts/usgs_fetch.py              # one update only
+python scripts/usgs_fetch.py --help       # all options
 ```
