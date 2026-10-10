@@ -1,0 +1,9 @@
+step,rows_before,rows_after,rows_removed,note
+load raw + parse time/updated as UTC,187588,187588,0,
+drop status = deleted,187588,187588,0,
+keep type = earthquake,187588,187588,0,
+keep mag >= 4.5,187588,187584,4,
+drop rows with a missing core value,187584,187584,0,"core = id, time, latitude, longitude, depth, mag, magType"
+repeated id: keep newest updated,187584,187584,0,
+same event under two ids (<= 10 s and <= 10 km): keep larger mag,187584,187547,37,
+final quakes_clean.csv,187588,187547,41,22 columns

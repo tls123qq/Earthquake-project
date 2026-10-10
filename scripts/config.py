@@ -38,3 +38,9 @@ def cell_id(lat, lon, grid=GRID_DEG):
     """Grid cell from floored coordinates, e.g. (12.3, 98.7) -> '10_95'."""
     import math
     return f"{int(math.floor(lat / grid) * grid)}_{int(math.floor(lon / grid) * grid)}"
+
+# --- Step 3 preprocessing rules ---
+DUP_MAX_SEC           = 10    # two ids this close in time ...
+DUP_MAX_KM            = 10    # ... and distance are treated as one event
+DEPTH_SPIKE_RATIO     = 10    # a depth value is a "default" if its count is this many
+DEPTH_SPIKE_MIN_COUNT = 1000  # times its neighbours' median and at least this large

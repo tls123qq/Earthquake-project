@@ -1,0 +1,17 @@
+item,value
+raw rows,187588
+clean rows,187547
+rows removed,41
+clean columns,22
+first event (UTC),2000-01-01 01:19:26.990000+00:00
+last event (UTC),2026-10-10 10:35:11.922000+00:00
+is_major rows,1218
+is_major pct,0.649
+depth_fixed rows,87087
+depth_fixed pct,46.43
+default depth values (km),"10, 30, 33, 35"
+"duplicate rows dropped (two ids, one event)",37
+distinct magType,19
+distinct regions,439
+grid cells with events,1206
+sample rows (2024-2025),14952
