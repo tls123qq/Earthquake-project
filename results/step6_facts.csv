@@ -1,0 +1,26 @@
+item,value
+cell-weeks with at least one earthquake,91350.0
+grid cells,1206.0
+train cell-weeks,66620.0
+train true anomalies (M >= 7.0),282.0
+train true anomaly pct,0.423
+val cell-weeks,11182.0
+val true anomalies (M >= 7.0),37.0
+val true anomaly pct,0.331
+test cell-weeks,13548.0
+test true anomalies (M >= 7.0),54.0
+test true anomaly pct,0.399
+"chosen contamination (best validation F1, set B)",0.002
+test precision A,0.759
+test recall A,0.407
+test PR-AUC A,0.601
+test lift vs random A,190.3
+test precision B,0.424
+test recall B,0.259
+test PR-AUC B,0.274
+test lift vs random B,106.4
+test precision C,0.485
+test recall C,0.296
+test PR-AUC C,0.244
+test lift vs random C,121.6
+test random precision,0.004

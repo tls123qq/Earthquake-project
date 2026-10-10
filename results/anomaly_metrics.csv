@@ -1,0 +1,37 @@
+split,feature_set,contamination,flagged,true_positives,precision,recall,f1,random_precision,lift_vs_random,pr_auc,roc_auc,cut_score,chosen
+val,A: with max magnitude,0.001,8,6,0.75,0.162,0.267,0.0033,226.7,0.506,0.995,0.7239,False
+val,A: with max magnitude,0.002,15,12,0.8,0.324,0.462,0.0033,241.8,0.506,0.995,0.7046,True
+val,A: with max magnitude,0.005,41,18,0.439,0.486,0.462,0.0033,132.7,0.506,0.995,0.67,False
+val,A: with max magnitude,0.01,87,26,0.299,0.703,0.419,0.0033,90.3,0.506,0.995,0.6422,False
+val,A: with max magnitude,0.02,196,32,0.163,0.865,0.275,0.0033,49.3,0.506,0.995,0.6095,False
+val,A: with max magnitude,0.05,492,37,0.075,1.0,0.14,0.0033,22.7,0.506,0.995,0.5651,False
+val,B: without max magnitude,0.001,10,5,0.5,0.135,0.213,0.0033,151.1,0.205,0.965,0.6999,False
+val,B: without max magnitude,0.002,16,7,0.438,0.189,0.264,0.0033,132.2,0.205,0.965,0.6835,True
+val,B: without max magnitude,0.005,50,11,0.22,0.297,0.253,0.0033,66.5,0.205,0.965,0.6567,False
+val,B: without max magnitude,0.01,99,15,0.152,0.405,0.221,0.0033,45.8,0.205,0.965,0.6338,False
+val,B: without max magnitude,0.02,204,21,0.103,0.568,0.174,0.0033,31.1,0.205,0.965,0.6063,False
+val,B: without max magnitude,0.05,513,26,0.051,0.703,0.095,0.0033,15.3,0.205,0.965,0.5662,False
+val,C: activity only,0.001,11,4,0.364,0.108,0.167,0.0033,109.9,0.156,0.919,0.7216,False
+val,C: activity only,0.002,17,6,0.353,0.162,0.222,0.0033,106.7,0.156,0.919,0.7032,True
+val,C: activity only,0.005,60,11,0.183,0.297,0.227,0.0033,55.4,0.156,0.919,0.6725,False
+val,C: activity only,0.01,104,15,0.144,0.405,0.213,0.0033,43.6,0.156,0.919,0.6515,False
+val,C: activity only,0.02,199,16,0.08,0.432,0.136,0.0033,24.3,0.156,0.919,0.6281,False
+val,C: activity only,0.05,522,22,0.042,0.595,0.079,0.0033,12.7,0.156,0.919,0.5838,False
+test,A: with max magnitude,0.001,16,15,0.938,0.278,0.429,0.004,235.2,0.601,0.995,0.7239,False
+test,A: with max magnitude,0.002,29,22,0.759,0.407,0.53,0.004,190.3,0.601,0.995,0.7046,True
+test,A: with max magnitude,0.005,70,32,0.457,0.593,0.516,0.004,114.7,0.601,0.995,0.67,False
+test,A: with max magnitude,0.01,125,40,0.32,0.741,0.447,0.004,80.3,0.601,0.995,0.6422,False
+test,A: with max magnitude,0.02,250,49,0.196,0.907,0.322,0.004,49.2,0.601,0.995,0.6095,False
+test,A: with max magnitude,0.05,633,54,0.085,1.0,0.157,0.004,21.4,0.601,0.995,0.5651,False
+test,B: without max magnitude,0.001,16,9,0.562,0.167,0.257,0.004,141.1,0.274,0.971,0.6999,False
+test,B: without max magnitude,0.002,33,14,0.424,0.259,0.322,0.004,106.4,0.274,0.971,0.6835,True
+test,B: without max magnitude,0.005,69,22,0.319,0.407,0.358,0.004,80.0,0.274,0.971,0.6567,False
+test,B: without max magnitude,0.01,132,30,0.227,0.556,0.323,0.004,57.0,0.274,0.971,0.6338,False
+test,B: without max magnitude,0.02,267,32,0.12,0.593,0.199,0.004,30.1,0.274,0.971,0.6063,False
+test,B: without max magnitude,0.05,649,40,0.062,0.741,0.114,0.004,15.5,0.274,0.971,0.5662,False
+test,C: activity only,0.001,16,7,0.438,0.13,0.2,0.004,109.8,0.244,0.921,0.7216,False
+test,C: activity only,0.002,33,16,0.485,0.296,0.368,0.004,121.6,0.244,0.921,0.7032,True
+test,C: activity only,0.005,79,23,0.291,0.426,0.346,0.004,73.0,0.244,0.921,0.6725,False
+test,C: activity only,0.01,139,24,0.173,0.444,0.249,0.004,43.3,0.244,0.921,0.6515,False
+test,C: activity only,0.02,265,29,0.109,0.537,0.182,0.004,27.5,0.244,0.921,0.6281,False
+test,C: activity only,0.05,669,34,0.051,0.63,0.094,0.004,12.8,0.244,0.921,0.5838,False
