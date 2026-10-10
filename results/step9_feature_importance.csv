@@ -1,0 +1,16 @@
+feature,pr_auc_drop,std
+n_major_12m,0.00212,0.00029
+n_events_12m,0.0021,0.00432
+frac_deep_hist,0.00123,0.00195
+max_mag_12m,0.00118,0.00371
+had_major_before,0.00111,0.00175
+n_events_hist,0.00099,0.0027
+nbr_major_12m,0.00053,0.00026
+nbr_events_12m,0.00034,0.00307
+mean_depth_hist,0.0002,0.00046
+frac_intermediate_hist,8e-05,0.00109
+frac_shallow_hist,-0.00013,0.00072
+n_events_3m,-0.00033,0.00064
+nbr_events_1m,-0.00044,0.0013
+months_since_major,-0.00244,0.00293
+n_events_1m,-0.00251,0.0037

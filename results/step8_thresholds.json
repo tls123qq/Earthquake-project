@@ -1,0 +1,8 @@
+{
+ "0_naive_baseline": 1.0,
+ "1_logreg_none": 0.5,
+ "2_logreg_class_weight": 0.5,
+ "3_lgbm_class_weight": 0.5,
+ "4_lgbm_smote": 0.5,
+ "5_best_tuned_threshold": 0.9720000971499002
+}

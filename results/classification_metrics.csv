@@ -1,0 +1,13 @@
+model_id,model,imbalance,split,threshold,accuracy,precision,recall,f1,pr_auc,roc_auc,predicted_pos,tp,fp,fn,tn
+0_naive_baseline,Naive baseline (major in last 12 months),none,val,1.0,0.9746,0.0229,0.2353,0.0418,0.0112,0.6061,1046,24,1022,78,42220
+0_naive_baseline,Naive baseline (major in last 12 months),none,test,1.0,0.9736,0.0235,0.2388,0.0428,0.0119,0.6079,1362,32,1330,102,52716
+1_logreg_none,Logistic Regression,none,val,0.5,0.9976,0.0,0.0,0.0,0.0301,0.9157,0,0,0,102,43242
+1_logreg_none,Logistic Regression,none,test,0.5,0.9975,0.0,0.0,0.0,0.0432,0.9057,0,0,0,134,54046
+2_logreg_class_weight,Logistic Regression,class_weight=balanced,val,0.5,0.8035,0.0105,0.8824,0.0207,0.0309,0.9162,8597,90,8507,12,34735
+2_logreg_class_weight,Logistic Regression,class_weight=balanced,test,0.5,0.8045,0.0109,0.8731,0.0216,0.0405,0.9091,10694,117,10577,17,43469
+3_lgbm_class_weight,LightGBM,class_weight=balanced,val,0.5,0.8895,0.0153,0.7255,0.03,0.0276,0.903,4837,74,4763,28,38479
+3_lgbm_class_weight,LightGBM,class_weight=balanced,test,0.5,0.8953,0.0178,0.7612,0.0347,0.0363,0.907,5742,102,5640,32,48406
+4_lgbm_smote,LightGBM,"SMOTE (train only, 10%)",val,0.5,0.9945,0.0467,0.0686,0.0556,0.0228,0.8948,150,7,143,95,43099
+4_lgbm_smote,LightGBM,"SMOTE (train only, 10%)",test,0.5,0.9951,0.0288,0.0299,0.0293,0.0265,0.8906,139,4,135,130,53911
+5_best_tuned_threshold,Best = 2_logreg_class_weight,threshold tuned on val,val,0.972,0.9919,0.0565,0.1569,0.0831,0.0309,0.9162,283,16,267,86,42975
+5_best_tuned_threshold,Best = 2_logreg_class_weight,threshold tuned on val,test,0.972,0.9919,0.0551,0.1418,0.0793,0.0405,0.9091,345,19,326,115,53720

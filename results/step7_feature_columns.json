@@ -1,0 +1,17 @@
+[
+ "n_events_1m",
+ "n_events_3m",
+ "n_events_12m",
+ "n_major_12m",
+ "max_mag_12m",
+ "months_since_major",
+ "had_major_before",
+ "n_events_hist",
+ "mean_depth_hist",
+ "frac_shallow_hist",
+ "frac_intermediate_hist",
+ "frac_deep_hist",
+ "nbr_events_1m",
+ "nbr_events_12m",
+ "nbr_major_12m"
+]

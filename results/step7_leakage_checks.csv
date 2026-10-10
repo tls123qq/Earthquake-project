@@ -1,0 +1,9 @@
+check,passed
+truncation at 2010-06: features unchanged without future data,True
+truncation at 2019-12: features unchanged without future data,True
+truncation at 2023-03: features unchanged without future data,True
+y equals 'any major in target month' from raw events,True
+latest train target month <= TRAIN_END (2019-12),True
+val and test target months do not overlap,True
+no per-event quality column or target in features,True
+no missing values in feature table,True

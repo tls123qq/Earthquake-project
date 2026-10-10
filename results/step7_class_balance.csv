@@ -1,0 +1,5 @@
+split,first_target_month,last_target_month,rows,positives,negatives,pct_positive,neg_per_pos
+train,2000-02,2019-12,287756,810,286946,0.281,354.3
+val,2020-01,2022-12,43344,102,43242,0.235,423.9
+test,2023-01,2026-09,54180,134,54046,0.247,403.3
+all,2000-02,2026-09,385280,1046,384234,0.271,367.3

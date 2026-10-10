@@ -1,0 +1,15 @@
+item,value
+chosen eps1 (km),100
+chosen eps2 (days),7
+chosen min_samples,5
+clusters,3567
+noise pct,66.5
+aftershock sequences,1991
+swarms,1576
+clusters with >= 10 events,1127
+major earthquakes inside a cluster pct,63.4
+known events inside a cluster,5 of 5
+mean aftershock capture of known events,0.94
+cluster rank 1,"2,980 events, Japan M9.1 2011-03-11, 215 days, aftershock sequence"
+cluster rank 2,"2,326 events, 2004 Sumatra - Andaman Islands Earthquake M9.1 2004-12-26, 274 days, aftershock sequence"
+cluster rank 3,"1,681 events, Russia M8.8 2025-07-29, 142 days, aftershock sequence"

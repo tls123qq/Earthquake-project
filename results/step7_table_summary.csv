@@ -1,0 +1,9 @@
+item,value
+cells,1204
+months,320
+first_feature_month,2000-01
+last_feature_month,2026-08
+data_end_utc,2026-10-10 10:35:11.922000+00:00
+n_features,15
+events_merged_lon180,2
+cells_first_active_after_TRAIN_END,98
