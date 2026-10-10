@@ -81,33 +81,40 @@
 
 ### 3.1 โครงสร้างโฟลเดอร์
 
-แชร์ผ่าน Google Drive (ถ้าคุ้น GitHub ใช้ GitHub ได้ แต่อย่าใส่ไฟล์ข้อมูลใหญ่ลง GitHub)
+แชร์ผ่าน GitHub: https://github.com/tls123qq/Earthquake-project (ไฟล์ข้อมูล CSV อยู่ใน git ด้วย คนที่รัน `usgs_fetch.py` เป็นคน push คนอื่น `git pull`)
 
 ```
-quake-project/
+Earthquake-project/
+├── README.md                    # วิธีติดตั้ง, โครงสร้าง, กฎ, คำสั่ง (ภาษาอังกฤษ)
+├── requirements.txt             # library ที่ต้องติดตั้ง (pip install -r requirements.txt)
+├── earthquake_project_plan.md   # แผนนี้ (แบ่งตามคน A/B/C + ไทม์ไลน์)
+├── earthquake_project_steps.md  # แผนเดียวกัน แบ่งตาม Step 0-16
+├── proposal_data_collection.md  # บันทึกการตัดสินใจเปลี่ยนเป็น usgs_fetch.py
 ├── scripts/
 │   ├── usgs_fetch.py            # ดึงข้อมูลย้อนหลัง + เก็บข้อมูลสด ในไฟล์เดียว (มีแล้ว)
-│   └── config.py                # ค่าคงที่ที่ทุกคนใช้ร่วมกัน
+│   └── config.py                # ค่าคงที่ที่ทุกคนใช้ร่วมกัน + path ไฟล์ + CLEAN_COLUMNS + cell_id()
 ├── data/
 │   ├── raw/                     # A เขียนเท่านั้น
 │   │   ├── quakes_m45_raw.csv   # ข้อมูลดิบ ตั้งแต่ 2000 ถึงตอนนี้ (อัปเดตทุกครั้งที่รัน usgs_fetch.py)
-│   │   └── backup/              # สคริปต์สำรองไฟล์ให้วันละครั้ง
+│   │   └── backup/              # สคริปต์สำรองไฟล์ให้วันละครั้ง (ไม่ขึ้น git)
 │   └── processed/
 │       ├── quakes_sample.csv    # A: ไฟล์ตัวอย่าง (ปี 2024-2025)
 │       ├── quakes_clean.csv     # A: ไฟล์หลักที่ทุกคนใช้
 │       └── cell_month_features.csv   # C
-├── notebooks/
-│   ├── 01_download.ipynb        # A
-│   ├── 02_preprocess.ipynb      # A
-│   ├── 03_eda.ipynb             # B
-│   ├── 04_clustering_anomaly.ipynb   # B
-│   ├── 05_classification.ipynb  # C
-│   └── 06_live_demo.ipynb       # A
-├── models/                      # B, C บันทึกโมเดล (.joblib)
-├── figures/                     # ตั้งชื่อ figA_..., figB_..., figC_...
+├── notebooks/                   # 1 Step = 1 notebook
+│   ├── 01_download.ipynb        # A  Step 1-2 (ตรวจข้อมูลดิบ)
+│   ├── 02_preprocess.ipynb      # A  Step 3
+│   ├── 03_eda.ipynb             # B  Step 4
+│   ├── 04_clustering.ipynb      # B  Step 5 ST-DBSCAN
+│   ├── 05_anomaly.ipynb         # B  Step 6 Isolation Forest
+│   ├── 06_classification.ipynb  # C  Step 7-9
+│   └── 07_live_demo.ipynb       # A  Step 10
+├── models/                      # B, C บันทึกโมเดล (.joblib, ไม่ขึ้น git)
+├── figures/                     # ตั้งชื่อ stepX_ชื่อรูป.png เช่น step3_missing.png
 ├── results/                     # ตัวเลขผลลัพธ์ (.csv)
-├── slides/  report/  video/
-└── docs/data_dictionary.md      # A
+├── docs/data_dictionary.md      # A
+├── slides/  report/  video/     # video/ ไม่ขึ้น git
+└── test/                        # ไฟล์ทดลองดึงข้อมูลรอบแรก (ไม่ได้ใช้ในงานหลัก)
 ```
 
 **กฎ:** แต่ละคนแก้เฉพาะไฟล์ของตัวเอง ถ้าต้องการให้คนอื่นแก้ ให้บอกในแชทกลุ่ม
@@ -193,11 +200,11 @@ A ต้องส่ง `quakes_clean.csv` ที่มี **คอลัมน�
 ทุกข้อต้อง **บันทึกตัวเลขก่อน/หลัง และทำรูปประกอบ** ไว้ใส่สไลด์
 
 1. **ชนิดข้อมูล:** แปลง `time`, `updated` เป็น datetime แบบ UTC
-2. **ค่าที่หายไป:** ทำตาราง % missing ทุกคอลัมน์ (รูป `figA_missing.png`)
+2. **ค่าที่หายไป:** ทำตาราง % missing ทุกคอลัมน์ (รูป `step3_missing.png`)
    - คอลัมน์หลัก (พิกัด, เวลา, mag, depth) ห้ามหาย ถ้าหายให้ตัดแถวแล้วรายงานจำนวน
    - คอลัมน์คุณภาพ (`nst`, `gap`, `magError` ฯลฯ) **ไม่ต้องเติม** เก็บไว้ตามเดิม แล้วเขียนว่าทำไม (หายเพราะเครือข่ายวัดคนละแบบ ไม่ใช่สุ่มหาย)
-3. **สเกลขนาดหลายแบบ:** นับ `magType` (รูป `figA_magtype.png`) อธิบายว่าแต่ละสเกลวัดต่างกัน เป็นความซับซ้อนของข้อมูลจากหลายแหล่ง
-4. **ความลึกที่เป็นค่าตั้งต้น:** ทำ histogram ของ `depth` จะเห็นแท่งสูงผิดปกติที่บางค่า (เช่น 10 km) ให้ตรวจเองว่ามีค่าไหนบ้าง แล้วสร้าง `depth_fixed` (รูป `figA_depth_fixed.png`)
+3. **สเกลขนาดหลายแบบ:** นับ `magType` (รูป `step3_magtype.png`) อธิบายว่าแต่ละสเกลวัดต่างกัน เป็นความซับซ้อนของข้อมูลจากหลายแหล่ง
+4. **ความลึกที่เป็นค่าตั้งต้น:** ทำ histogram ของ `depth` จะเห็นแท่งสูงผิดปกติที่บางค่า (เช่น 10 km) ให้ตรวจเองว่ามีค่าไหนบ้าง แล้วสร้าง `depth_fixed` (รูป `step3_depth_fixed.png`)
 5. **ภูมิภาค:** ตัดข้อความ `place` หลังเครื่องหมายจุลภาคตัวสุดท้าย เป็น `region` (เช่น `"2 km NE of Satte, Japan"` เป็น `Japan`) รายงานว่ากี่ % ที่ตัดไม่ได้
 6. **ช่องตาราง:** `cell_id` จากพิกัดปัดลงตาม `GRID_DEG`
 7. **ฉลาก:** `is_major`, `depth_class`
@@ -231,7 +238,7 @@ A ต้องส่ง `quakes_clean.csv` ที่มี **คอลัมน�
 ### ขั้น B1: EDA (ศ. 9 ถึง ส. 10, ได้คะแนน Exploration 10%)
 เริ่มจาก `quakes_sample.csv` แล้วเปลี่ยนเป็น `quakes_clean.csv` เมื่อ A ส่ง
 
-รูปที่ต้องมี (บันทึกเป็น `figB_*.png`):
+รูปที่ต้องมี (บันทึกเป็น `step4_*.png`):
 - [ ] แผนที่โลก: จุดตามพิกัด, สีตามความลึก, ขนาดตาม mag (จะเห็นแนวรอยต่อแผ่นเปลือกโลก)
 - [ ] จำนวนเหตุการณ์ต่อปี และต่อเดือน (มาร์กจุดพีคแล้วหาว่าเป็นเหตุการณ์อะไร)
 - [ ] Histogram ของ mag แกน y แบบ log (จะเห็นว่ายิ่งใหญ่ยิ่งน้อยแบบเลขชี้กำลัง ซึ่งคือที่มาของ imbalance)
@@ -254,7 +261,7 @@ A ต้องส่ง `quakes_clean.csv` ที่มี **คอลัมน�
 
 **ผลที่ต้องได้:**
 - จำนวนคลัสเตอร์, % noise
-- แผนที่สีตามคลัสเตอร์ (`figB_clusters_map.png`)
+- แผนที่สีตามคลัสเตอร์ (`step5_clusters_map.png`)
 - ตัวอย่างคลัสเตอร์ใหญ่ 3 อันดับ เทียบกับเหตุการณ์จริงใน B1
 - `results/clusters_summary.csv`
 
@@ -269,7 +276,7 @@ A ต้องส่ง `quakes_clean.csv` ที่มี **คอลัมน�
    - **ข้อควรระวัง:** ถ้าใส่ "mag สูงสุด" เป็น feature ผลจะดีเกินจริง ให้ลองทั้งแบบมีและไม่มี feature นี้ แล้วรายงานทั้งคู่
 4. บันทึกโมเดล: `models/isoforest.joblib` + รายชื่อ feature `models/isoforest_features.json` (A ใช้ใน Live demo)
 
-**ผลที่ต้องได้:** timeline คะแนนความผิดปกติ (`figB_anomaly_timeline.png`), `results/anomaly_metrics.csv`
+**ผลที่ต้องได้:** timeline คะแนนความผิดปกติ (`step6_anomaly_timeline.png`), `results/anomaly_metrics.csv`
 
 ---
 
@@ -317,7 +324,7 @@ A ต้องส่ง `quakes_clean.csv` ที่มี **คอลัมน�
 - **Accuracy ใช้ไม่ได้** (ทาย 0 ทั้งหมดก็ได้ accuracy สูง) ให้ใส่ตัวเลขนี้ในสไลด์เพื่อแสดงว่าเข้าใจ
 - Metric หลัก: precision, recall, F1 ของคลาส 1, **PR-AUC**, confusion matrix
 - ตาราง `results/classification_metrics.csv` (ทุกโมเดล, ทั้ง val และ test)
-- รูป: confusion matrix (`figC_cm.png`), PR curve ทุกโมเดล (`figC_pr.png`), feature importance (`figC_importance.png`)
+- รูป: confusion matrix (`step9_cm.png`), PR curve ทุกโมเดล (`step9_pr.png`), feature importance (`step9_importance.png`)
 - เขียน 3-5 บรรทัด: โมเดลไหนดีที่สุด, ชนะ baseline ไหม, ทำไม
 
 ### ขั้น C6: Applications + References
