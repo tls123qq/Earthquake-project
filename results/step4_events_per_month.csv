@@ -1,0 +1,323 @@
+month,n,max_mag,largest_event,top_region,top_region_pct,complete_month
+2000-01-01,321,7.2,Tonga M7.2,Indonesia,13.4,True
+2000-02-01,282,7.1,Vanuatu M7.1,Indonesia,9.9,True
+2000-03-01,329,7.6,Japan M7.6,Indonesia,11.9,True
+2000-04-01,316,7.0,Argentina M7.0,Indonesia,15.5,True
+2000-05-01,376,7.6,Indonesia M7.6,Indonesia,23.4,True
+2000-06-01,559,7.9,Indonesia M7.9,Indonesia,39.7,True
+2000-07-01,546,6.6,Papua New Guinea M6.6,Japan,39.0,True
+2000-08-01,477,7.4,Japan M7.4,Japan,25.2,True
+2000-09-01,333,6.4,Tonga M6.4,Indonesia,20.7,True
+2000-10-01,372,7.0,Vanuatu M7.0,Indonesia,11.8,True
+2000-11-01,693,8.0,New Ireland M8.0,Papua New Guinea,61.0,True
+2000-12-01,405,7.0,Turkmenistan M7.0,Papua New Guinea,21.5,True
+2001-01-01,390,7.7,El Salvador M7.7,Philippines,14.4,True
+2001-02-01,383,7.4,Indonesia M7.4,Indonesia,23.0,True
+2001-03-01,348,6.8,Japan M6.8,Indonesia,15.5,True
+2001-04-01,370,6.9,Fiji M6.9,Indonesia,12.4,True
+2001-05-01,330,6.7,Russia M6.7,Indonesia,14.2,True
+2001-06-01,497,8.4,Peru M8.4,Peru,30.2,True
+2001-07-01,378,7.6,Peru M7.6,Peru,15.1,True
+2001-08-01,475,7.1,New Zealand M7.1,New Zealand,16.0,True
+2001-09-01,345,6.5,Indonesia M6.5,Indonesia,15.9,True
+2001-10-01,422,7.5,Indonesia M7.5,Indonesia,12.8,True
+2001-11-01,388,7.8,China M7.8,China,8.0,True
+2001-12-01,353,7.1,Australia M7.1,Indonesia,11.6,True
+2002-01-01,399,7.2,Vanuatu M7.2,Vanuatu,15.5,True
+2002-02-01,323,6.6,Papua New Guinea M6.6,Indonesia,13.3,True
+2002-03-01,410,7.5,Philippines M7.5,Philippines,11.5,True
+2002-04-01,346,7.1,Guam M7.1,Indonesia,8.1,True
+2002-05-01,332,6.4,Alaska M6.4,Indonesia,12.3,True
+2002-06-01,425,7.3,China M7.3,Indonesia,9.6,True
+2002-07-01,337,6.5,Panama M6.5,Indonesia,17.5,True
+2002-08-01,381,7.7,Fiji M7.7,Indonesia,12.3,True
+2002-09-01,487,7.6,Papua New Guinea M7.6,Papua New Guinea,17.2,True
+2002-10-01,568,7.6,Indonesia M7.6,Indonesia,25.0,True
+2002-11-01,545,7.9,Alaska M7.9,Indonesia,15.2,True
+2002-12-01,410,6.7,Papua New Guinea M6.7,Indonesia,12.2,True
+2003-01-01,359,7.6,Mexico M7.6,Indonesia,19.8,True
+2003-02-01,320,6.6,Alaska M6.6,Indonesia,14.1,True
+2003-03-01,403,7.1,Alaska M7.1,Indonesia,14.4,True
+2003-04-01,361,6.5,Bouvet Island M6.5,Indonesia,17.5,True
+2003-05-01,408,7.0,Japan M7.0,Indonesia,21.6,True
+2003-06-01,375,7.1,Brazil M7.1,Indonesia,15.7,True
+2003-07-01,415,7.6,Carlsberg Ridge M7.6,Indonesia,11.3,True
+2003-08-01,460,7.6,Scotia Sea M7.6,Indonesia,12.4,True
+2003-09-01,515,8.16,Tokachi-Oki M8.2,Japan,16.3,True
+2003-10-01,482,7.0,Japan M7.0,Japan,16.6,True
+2003-11-01,517,7.8,Alaska M7.8,Alaska,17.0,True
+2003-12-01,520,7.3,New Caledonia M7.3,New Caledonia,17.1,True
+2004-01-01,465,7.1,New Caledonia M7.1,New Caledonia,14.6,True
+2004-02-01,435,7.3,Indonesia M7.3,Indonesia,23.2,True
+2004-03-01,478,6.2,Nicaragua M6.2,Kermadec Islands,13.2,True
+2004-04-01,493,6.7,Indonesia M6.7,Indonesia,14.0,True
+2004-05-01,533,6.6,Chile M6.6,Indonesia,10.9,True
+2004-06-01,430,6.9,Russia M6.9,Indonesia,11.6,True
+2004-07-01,420,7.3,Indonesia M7.3,Indonesia,12.1,True
+2004-08-01,395,6.5,Chile M6.5,Indonesia,11.1,True
+2004-09-01,480,7.4,Japan M7.4,Japan,12.7,True
+2004-10-01,451,7.0,Nicaragua M7.0,Indonesia,12.4,True
+2004-11-01,663,7.5,Timor Leste M7.5,Timor Leste,13.4,True
+2004-12-01,937,9.1,Sumatra - Andaman Islands M9.1,Indonesia,33.0,True
+2005-01-01,1231,6.8,Mid-Atlantic Ridge M6.8,Indonesia,55.5,True
+2005-02-01,517,7.1,Philippines M7.1,Indonesia,25.9,True
+2005-03-01,790,8.6,Indonesia M8.6,Indonesia,44.9,True
+2005-04-01,854,6.7,Indonesia M6.7,Indonesia,59.4,True
+2005-05-01,593,6.9,Indonesia M6.9,Indonesia,34.1,True
+2005-06-01,577,7.8,Chile M7.8,Indonesia,24.3,True
+2005-07-01,560,7.2,India M7.2,Indonesia,26.1,True
+2005-08-01,510,7.2,Japan M7.2,Indonesia,21.2,True
+2005-09-01,615,7.6,Papua New Guinea M7.6,Indonesia,17.2,True
+2005-10-01,640,7.6,Pakistan M7.6,Pakistan,25.5,True
+2005-11-01,450,7.0,Japan M7.0,Indonesia,15.1,True
+2005-12-01,536,6.8,Democratic Republic of the Congo M6.8,Indonesia,14.9,True
+2006-01-01,441,7.6,Indonesia M7.6,Indonesia,15.6,True
+2006-02-01,439,7.0,Zimbabwe M7.0,Indonesia,17.1,True
+2006-03-01,617,6.7,Indonesia M6.7,India,15.9,True
+2006-04-01,599,7.6,Russia M7.6,Russia,15.7,True
+2006-05-01,692,8.0,Tonga M8.0,Tonga,21.1,True
+2006-06-01,514,6.5,Alaska M6.5,Indonesia,16.1,True
+2006-07-01,737,7.7,Indonesia M7.7,Indonesia,41.5,True
+2006-08-01,533,7.0,Scotia Sea M7.0,Indonesia,23.6,True
+2006-09-01,434,6.9,Tonga M6.9,Indonesia,16.1,True
+2006-10-01,555,6.7,Hawaii M6.7,Indonesia,12.8,True
+2006-11-01,997,8.3,Kuril Islands M8.3,Kuril Islands,46.0,True
+2006-12-01,515,7.1,Taiwan M7.1,Kuril Islands,14.6,True
+2007-01-01,704,8.1,Kuril Islands M8.1,Indonesia,26.3,True
+2007-02-01,484,6.7,Indonesia M6.7,Indonesia,19.0,True
+2007-03-01,555,7.1,Vanuatu M7.1,Indonesia,15.1,True
+2007-04-01,858,8.1,Solomon Islands M8.1,Papua New Guinea,20.2,True
+2007-05-01,464,6.5,Fiji M6.5,Indonesia,14.4,True
+2007-06-01,472,6.7,Guatemala M6.7,Indonesia,11.4,True
+2007-07-01,538,6.9,Indonesia M6.9,Indonesia,13.0,True
+2007-08-01,686,8.0,Peru M8.0,Peru,13.0,True
+2007-09-01,785,8.4,Indonesia M8.4,Indonesia,32.2,True
+2007-10-01,591,7.2,Northern Mariana Islands M7.2,Indonesia,16.4,True
+2007-11-01,572,7.7,Chile M7.7,Indonesia,16.3,True
+2007-12-01,564,7.8,Fiji Islands M7.8,Indonesia,15.6,True
+2008-01-01,446,6.6,Canada M6.6,Indonesia,17.9,True
+2008-02-01,498,7.4,Indonesia M7.4,Indonesia,19.5,True
+2008-03-01,527,7.2,China M7.2,Indonesia,15.7,True
+2008-04-01,556,7.3,Vanuatu M7.3,Vanuatu,14.4,True
+2008-05-01,709,7.9,China M7.9,China,34.3,True
+2008-06-01,570,7.0,South Sandwich Islands M7.0,Indonesia,14.4,True
+2008-07-01,463,7.7,Sea of Okhotsk M7.7,Indonesia,11.0,True
+2008-08-01,503,6.7,Nepal M6.7,Indonesia,9.3,True
+2008-09-01,482,7.0,New Zealand M7.0,Indonesia,12.0,True
+2008-10-01,574,6.9,Tonga M6.9,Indonesia,9.1,True
+2008-11-01,457,7.4,Indonesia M7.4,Indonesia,10.1,True
+2008-12-01,520,6.8,Kermadec Islands M6.8,Indonesia,11.7,True
+2009-01-01,651,7.7,Indonesia M7.7,Indonesia,30.9,True
+2009-02-01,601,7.2,Philippines M7.2,Philippines,38.8,True
+2009-03-01,485,7.6,Tonga M7.6,Tonga,18.1,True
+2009-04-01,448,6.9,Kuril Islands M6.9,Indonesia,11.2,True
+2009-05-01,388,7.3,Honduras M7.3,Indonesia,10.6,True
+2009-06-01,389,6.7,Papua New Guinea M6.7,Indonesia,10.3,True
+2009-07-01,481,7.8,New Zealand M7.8,New Zealand,17.5,True
+2009-08-01,501,7.5,India M7.5,Indonesia,20.0,True
+2009-09-01,476,8.1,Samoa M8.1,Tonga,24.8,True
+2009-10-01,750,7.8,Vanuatu M7.8,Tonga,18.1,True
+2009-11-01,426,7.3,Fiji M7.3,Indonesia,11.7,True
+2009-12-01,457,6.4,Loyalty Islands M6.4,Indonesia,14.2,True
+2010-01-01,570,7.1,Solomon Islands M7.1,Solomon Islands,13.2,True
+2010-02-01,789,8.8,Chile M8.8,Chile,48.2,True
+2010-03-01,931,7.0,Chile M7.0,Chile,54.2,True
+2010-04-01,495,7.8,Indonesia M7.8,Chile,17.0,True
+2010-05-01,476,7.2,Indonesia M7.2,Chile,14.5,True
+2010-06-01,436,7.5,India M7.5,Indonesia,15.1,True
+2010-07-01,541,7.6,Philippines M7.6,Papua New Guinea,14.8,True
+2010-08-01,562,7.3,Vanuatu M7.3,Vanuatu,14.4,True
+2010-09-01,480,7.0,New Zealand M7.0,Indonesia,11.9,True
+2010-10-01,494,7.8,Indonesia M7.8,Indonesia,22.3,True
+2010-11-01,525,6.8,Japan M6.8,Djibouti,16.8,True
+2010-12-01,914,7.4,Japan M7.4,Japan,38.1,True
+2011-01-01,659,7.2,Chile M7.2,Japan,22.2,True
+2011-02-01,482,6.9,Chile M6.9,Japan,17.2,True
+2011-03-01,2400,9.1,Japan M9.1,Japan,82.5,True
+2011-04-01,834,7.1,Japan M7.1,Japan,51.7,True
+2011-05-01,783,6.8,New Caledonia M6.8,Japan,33.2,True
+2011-06-01,669,7.3,Alaska M7.3,Japan,25.7,True
+2011-07-01,839,7.6,Kermadec Islands M7.6,Kermadec Islands,19.7,True
+2011-08-01,639,7.2,Vanuatu M7.2,Japan,20.2,True
+2011-09-01,528,7.3,Fiji M7.3,Japan,21.8,True
+2011-10-01,625,7.4,Kermadec Islands M7.4,Japan,15.4,True
+2011-11-01,572,6.9,Japan M6.9,Japan,15.2,True
+2011-12-01,553,7.1,Papua New Guinea M7.1,Japan,15.6,True
+2012-01-01,648,7.2,Sumatra M7.2,Japan,15.6,True
+2012-02-01,703,7.1,Vanuatu M7.1,Vanuatu,13.8,True
+2012-03-01,697,7.4,Mexico M7.4,Japan,20.9,True
+2012-04-01,780,8.6,Wharton Basin M8.6,Sumatra,18.6,True
+2012-05-01,516,6.7,Argentina M6.7,Japan,15.3,True
+2012-06-01,486,6.3,Panama M6.3,Indonesia,12.6,True
+2012-07-01,524,6.7,Mauritius - Reunion M6.7,Japan,10.1,True
+2012-08-01,547,7.7,Russia M7.7,Philippines,10.6,True
+2012-09-01,630,7.6,Costa Rica M7.6,Philippines,24.3,True
+2012-10-01,557,7.8,Canada M7.8,Indonesia,13.1,True
+2012-11-01,532,7.4,Guatemala M7.4,Indonesia,10.5,True
+2012-12-01,568,7.3,Japan M7.3,Japan,26.9,True
+2013-01-01,554,7.5,Alaska M7.5,Japan,12.1,True
+2013-02-01,975,8.0,Santa Cruz Islands M8.0,Solomon Islands,54.8,True
+2013-03-01,486,6.5,Russia M6.5,Papua New Guinea,11.1,True
+2013-04-01,562,7.7,Iran M7.7,Japan,14.6,True
+2013-05-01,581,8.3,Sea of Okhotsk M8.3,Russia,22.2,True
+2013-06-01,447,6.7,Indonesia M6.7,Indonesia,11.0,True
+2013-07-01,540,7.3,Papua New Guinea M7.3,Indonesia,11.7,True
+2013-08-01,514,7.0,Alaska M7.0,Indonesia,9.7,True
+2013-09-01,535,7.7,Pakistan M7.7,Indonesia,10.5,True
+2013-10-01,604,7.1,Philippines M7.1,Philippines,18.0,True
+2013-11-01,777,7.7,Scotia Sea M7.7,Scotia Sea,19.9,True
+2013-12-01,633,6.4,Timor Leste M6.4,Indonesia,11.4,True
+2014-01-01,639,6.5,Vanuatu M6.5,Indonesia,9.9,True
+2014-02-01,554,6.9,China M6.9,Japan,8.8,True
+2014-03-01,667,6.8,California M6.8,Chile,15.1,True
+2014-04-01,1028,8.2,Chile M8.2,Papua New Guinea,25.1,True
+2014-05-01,684,6.9,Greece M6.9,Papua New Guinea,8.9,True
+2014-06-01,775,7.9,Alaska M7.9,New Zealand,14.8,True
+2014-07-01,668,6.9,Mexico M6.9,Japan,12.0,True
+2014-08-01,632,6.9,Federated States of Micronesia M6.9,Japan,11.9,True
+2014-09-01,580,6.7,Guam M6.7,Indonesia,10.3,True
+2014-10-01,754,7.3,El Salvador M7.3,Iceland,12.3,True
+2014-11-01,743,7.1,Fiji M7.1,Indonesia,17.6,True
+2014-12-01,608,6.6,Philippines M6.6,Indonesia,10.5,True
+2015-01-01,555,6.8,Vanuatu M6.8,Japan,11.2,True
+2015-02-01,520,7.1,Mid-Atlantic Ridge M7.1,Indonesia,11.3,True
+2015-03-01,521,7.5,Papua New Guinea M7.5,Indonesia,11.7,True
+2015-04-01,525,7.8,Nepal M7.8,Nepal,12.0,True
+2015-05-01,713,7.8,Japan M7.8,Papua New Guinea,25.1,True
+2015-06-01,517,7.0,Mid-Atlantic Ridge M7.0,Japan,10.6,True
+2015-07-01,602,7.0,Solomon Islands M7.0,Japan,9.0,True
+2015-08-01,543,6.6,Solomon Islands M6.6,Indonesia,12.2,True
+2015-09-01,890,8.3,Chile M8.3,Chile,32.9,True
+2015-10-01,521,7.5,Afghanistan M7.5,Chile,12.7,True
+2015-11-01,636,7.6,Peru M7.6,Indonesia,16.8,True
+2015-12-01,609,7.2,Tajikistan M7.2,Indonesia,17.7,True
+2016-01-01,536,7.2,Russia M7.2,Indonesia,9.5,True
+2016-02-01,500,6.4,Taiwan M6.4,Mid-Atlantic Ridge,9.4,True
+2016-03-01,466,7.8,Indonesia M7.8,Indonesia,10.1,True
+2016-04-01,694,7.8,Ecuador M7.8,Vanuatu,16.9,True
+2016-05-01,529,7.2,South Sandwich Islands M7.2,Japan,9.8,True
+2016-06-01,575,6.6,Indonesia M6.6,Indonesia,11.5,True
+2016-07-01,576,7.7,Northern Mariana Islands M7.7,Japan,10.1,True
+2016-08-01,729,7.4,South Georgia Island M7.4,South Georgia Island,13.2,True
+2016-09-01,754,7.0,New Zealand M7.0,New Zealand,14.2,True
+2016-10-01,481,6.8,Papua New Guinea M6.8,Japan,10.0,True
+2016-11-01,718,7.8,New Zealand M7.8,New Zealand,21.0,True
+2016-12-01,879,7.9,Papua New Guinea M7.9,Solomon Islands,23.2,True
+2017-01-01,613,7.9,Papua New Guinea M7.9,Indonesia,12.4,True
+2017-02-01,465,6.9,Fiji Islands M6.9,Indonesia,12.7,True
+2017-03-01,485,6.6,Russia M6.6,Indonesia,10.7,True
+2017-04-01,517,6.9,Chile M6.9,Philippines,13.3,True
+2017-05-01,538,6.8,Vanuatu M6.8,Indonesia,11.5,True
+2017-06-01,395,6.9,Guatemala M6.9,Indonesia,10.1,True
+2017-07-01,490,7.7,Russia M7.7,Indonesia,10.8,True
+2017-08-01,463,6.6,Ascension Island M6.6,Indonesia,9.5,True
+2017-09-01,623,8.2,Mexico M8.2,Mexico,25.2,True
+2017-10-01,522,6.7,Bouvet Island M6.7,Indonesia,10.5,True
+2017-11-01,732,7.3,Iraq M7.3,New Caledonia,29.2,True
+2017-12-01,527,6.5,Bouvet Island M6.5,Japan,10.4,True
+2018-01-01,559,7.9,Alaska M7.9,Japan,7.3,True
+2018-02-01,564,7.5,Papua New Guinea M7.5,Papua New Guinea,26.8,True
+2018-03-01,553,6.9,Papua New Guinea M6.9,Papua New Guinea,26.0,True
+2018-04-01,487,6.8,Bolivia M6.8,Indonesia,11.3,True
+2018-05-01,544,6.9,Hawaii M6.9,Indonesia,9.7,True
+2018-06-01,485,6.1,Vanuatu M6.1,Indonesia,10.3,True
+2018-07-01,538,6.4,Vanuatu M6.4,Southwest Indian Ridge,16.2,True
+2018-08-01,799,8.2,Fiji M8.2,Indonesia,17.0,True
+2018-09-01,693,7.9,Fiji M7.9,Indonesia,15.0,True
+2018-10-01,840,7.0,Papua New Guinea M7.0,Indonesia,10.4,True
+2018-11-01,635,7.1,Alaska M7.1,Indonesia,10.6,True
+2018-12-01,811,7.5,New Caledonia M7.5,New Caledonia,16.2,True
+2019-01-01,658,6.8,Brazil M6.8,Indonesia,16.4,True
+2019-02-01,561,7.5,Ecuador M7.5,Indonesia,15.7,True
+2019-03-01,622,7.0,Peru M7.0,Indonesia,11.6,True
+2019-04-01,641,6.8,Indonesia M6.8,Indonesia,18.1,True
+2019-05-01,552,8.0,Peru M8.0,Indonesia,12.3,True
+2019-06-01,637,7.3,New Zealand M7.3,Indonesia,13.7,True
+2019-07-01,696,7.2,Indonesia M7.2,Indonesia,21.0,True
+2019-08-01,502,6.9,Indonesia M6.9,Indonesia,10.6,True
+2019-09-01,526,6.7,Chile M6.7,Indonesia,8.9,True
+2019-10-01,573,6.6,Philippines M6.6,Philippines,13.4,True
+2019-11-01,595,7.1,Indonesia M7.1,Indonesia,22.7,True
+2019-12-01,647,6.8,Philippines M6.8,Philippines,11.1,True
+2020-01-01,657,7.7,Jamaica M7.7,Indonesia,8.2,True
+2020-02-01,522,7.0,Russia M7.0,Indonesia,11.3,True
+2020-03-01,497,7.5,Russia M7.5,Indonesia,10.1,True
+2020-04-01,456,6.6,Japan M6.6,Papua New Guinea,11.4,True
+2020-05-01,557,6.8,Banda Sea M6.8,Japan,9.0,True
+2020-06-01,587,7.4,Kermadec Islands M7.4,Kermadec Islands,13.1,True
+2020-07-01,551,7.8,Alaska M7.8,Indonesia,7.8,True
+2020-08-01,528,6.9,Indonesia M6.9,Indonesia,12.9,True
+2020-09-01,557,6.9,Mid-Atlantic Ridge M6.9,Japan,7.5,True
+2020-10-01,596,7.6,Alaska M7.6,Indonesia,10.4,True
+2020-11-01,471,6.4,Russia M6.4,Indonesia,11.0,True
+2020-12-01,528,6.7,Chile M6.7,Indonesia,9.1,True
+2021-01-01,576,7.0,Philippines M7.0,Indonesia,9.9,True
+2021-02-01,848,7.7,Loyalty Islands M7.7,Loyalty Islands,34.0,True
+2021-03-01,1261,8.1,New Zealand M8.1,Kermadec Islands,34.0,True
+2021-04-01,599,6.6,South Sandwich Islands M6.6,Kermadec Islands,16.9,True
+2021-05-01,626,7.3,China M7.3,Japan,10.2,True
+2021-06-01,528,6.5,New Zealand M6.5,Indonesia,17.4,True
+2021-07-01,607,8.2,Alaska M8.2,Indonesia,9.4,True
+2021-08-01,1306,8.1,South Sandwich Islands M8.1,South Sandwich Islands,52.2,True
+2021-09-01,691,7.0,Mexico M7.0,South Sandwich Islands,18.4,True
+2021-10-01,546,7.3,Vanuatu M7.3,South Sandwich Islands,12.3,True
+2021-11-01,603,7.5,Peru M7.5,Indonesia,10.0,True
+2021-12-01,763,7.3,Flores Sea M7.3,Japan,12.5,True
+2022-01-01,770,6.8,Alaska M6.8,Tonga,14.9,True
+2022-02-01,652,6.8,Fiji Islands M6.8,Indonesia,12.1,True
+2022-03-01,772,7.3,Japan M7.3,Japan,9.8,True
+2022-04-01,653,6.6,Nicaragua M6.6,Indonesia,11.5,True
+2022-05-01,535,7.2,Peru M7.2,Japan,9.0,True
+2022-06-01,564,6.5,Brazil M6.5,Indonesia,10.3,True
+2022-07-01,605,7.0,Philippines M7.0,Indonesia,10.1,True
+2022-08-01,552,6.6,Kermadec Islands M6.6,Indonesia,12.7,True
+2022-09-01,815,7.6,Papua New Guinea M7.6,Reykjanes Ridge,23.7,True
+2022-10-01,613,6.7,Panama M6.7,Japan,8.8,True
+2022-11-01,645,7.3,Tonga M7.3,Solomon Islands,9.8,True
+2022-12-01,589,6.8,Tonga M6.8,Indonesia,12.7,True
+2023-01-01,645,7.6,Indonesia M7.6,Indonesia,22.2,True
+2023-02-01,656,7.8,Kahramanmaras M7.8,Turkey,22.4,True
+2023-03-01,554,7.0,Kermadec Islands M7.0,Indonesia,9.0,True
+2023-04-01,537,7.1,New Zealand M7.1,Indonesia,12.1,True
+2023-05-01,662,7.7,Loyalty Islands M7.7,Loyalty Islands,23.1,True
+2023-06-01,614,7.2,Tonga M7.2,Tonga,16.0,True
+2023-07-01,484,7.2,Alaska M7.2,Indonesia,13.2,True
+2023-08-01,492,7.1,Indonesia M7.1,Indonesia,11.2,True
+2023-09-01,509,6.8,Morocco M6.8,Japan,13.2,True
+2023-10-01,676,6.9,Papua New Guinea M6.9,Japan,25.7,True
+2023-11-01,694,7.1,Banda Sea M7.1,Northern Mariana Islands,11.4,True
+2023-12-01,1116,7.6,Philippines M7.6,Philippines,45.9,True
+2024-01-01,623,7.5,Japan M7.5,Japan,14.1,True
+2024-02-01,508,6.3,East Pacific Rise M6.3,Philippines,10.2,True
+2024-03-01,509,6.9,Papua New Guinea M6.9,Indonesia,10.6,True
+2024-04-01,705,7.4,Taiwan M7.4,Taiwan,24.0,True
+2024-05-01,546,6.6,Tonga M6.6,Indonesia,10.4,True
+2024-06-01,507,7.2,Peru M7.2,Indonesia,11.6,True
+2024-07-01,474,7.4,Chile M7.4,Indonesia,9.7,True
+2024-08-01,450,7.1,Japan M7.1,Philippines,11.6,True
+2024-09-01,481,6.5,Canada M6.5,Japan,8.9,True
+2024-10-01,522,6.6,Tonga M6.6,Indonesia,10.5,True
+2024-11-01,487,6.8,Cuba M6.8,Japan,17.7,True
+2024-12-01,585,7.3,Vanuatu M7.3,Indonesia,9.9,True
+2025-01-01,655,7.1,Southern Tibetan Plateau M7.1,Ethiopia,13.0,True
+2025-02-01,571,7.6,Cayman Islands M7.6,Greece,15.6,True
+2025-03-01,539,7.7,Burma (Myanmar) M7.7,Indonesia,12.8,True
+2025-04-01,600,6.9,Reykjanes Ridge M6.9,Papua New Guinea,27.2,True
+2025-05-01,595,7.4,Drake Passage M7.4,Argentina,13.3,True
+2025-06-01,553,6.6,Scotia Sea M6.6,Japan,11.0,True
+2025-07-01,1320,8.8,Russia M8.8,Russia,53.4,True
+2025-08-01,983,7.5,Southern Drake Passage M7.5,Russia,52.2,True
+2025-09-01,799,7.8,Russia M7.8,Russia,37.3,True
+2025-10-01,756,7.6,Drake Passage M7.6,Philippines,20.0,True
+2025-11-01,622,6.8,Japan M6.8,Russia,17.8,True
+2025-12-01,562,7.6,Japan M7.6,Japan,13.3,True
+2026-01-01,618,6.5,Mexico M6.5,Philippines,14.7,True
+2026-02-01,490,7.1,Malaysia M7.1,Indonesia,12.7,True
+2026-03-01,620,7.5,Tonga M7.5,Japan,11.6,True
+2026-04-01,683,7.4,Indonesia M7.4,Indonesia,26.5,True
+2026-05-01,520,6.9,Chile M6.9,Papua New Guinea,9.0,True
+2026-06-01,711,7.8,Philippines M7.8,Philippines,29.4,True
+2026-07-01,797,7.3,Mexico M7.3,Indonesia,11.4,True
+2026-08-01,772,7.8,Indonesia M7.8,Indonesia,33.3,True
+2026-09-01,573,6.6,New Caledonia M6.6,Indonesia,11.9,True
+2026-10-01,202,7.7,Panama M7.7,Panama,20.3,False

@@ -1,0 +1,6 @@
+event,label,id,time,latitude,longitude,depth,mag,magType,region,followers_30d_300km
+Sumatra-Andaman,Sumatra 2004,official20041226005853450_30,2004-12-26 00:58:53.450000+00:00,3.295,95.982,30.0,9.1,mw,2004 Sumatra - Andaman Islands Earthquake,278
+"Tohoku, Japan",Tohoku 2011,official20110311054624120_30,2011-03-11 05:46:24.120000+00:00,38.297,142.373,29.0,9.1,mww,Japan,1910
+"Kahramanmaras, Turkey",Turkey 2023,us6000jllz,2023-02-06 01:17:34.342000+00:00,37.2256,37.0143,10.0,7.8,mww,Kahramanmaras earthquake sequence,169
+Myanmar,Myanmar 2025,us7000pn9s,2025-03-28 06:20:52.715000+00:00,22.011,95.9363,10.0,7.7,mww,Burma (Myanmar),22
+"Kamchatka, Russia",Kamchatka 2025,us6000qw60,2025-07-29 23:24:52.483000+00:00,52.4948,160.2395,35.0,8.8,mww,Russia,834

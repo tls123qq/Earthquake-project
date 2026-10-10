@@ -1,0 +1,32 @@
+item,value
+rows,187547
+first event (UTC),2000-01-01 01:19:26.990000+00:00
+last event (UTC),2026-10-10 10:35:11.922000+00:00
+grid cells with events,1206
+complete years,2000-2025
+mean earthquakes per complete year,6983
+busiest year,"2011 (9,583)"
+quietest complete year,"2001 (4,679)"
+mean earthquakes per complete month,584
+peak month 2005-01,"1,231 events, 56% in Indonesia"
+peak month 2011-03,"2,400 events, 82% in Japan"
+peak month 2021-03,"1,261 events, 34% in Kermadec Islands"
+peak month 2021-08,"1,306 events, 52% in South Sandwich Islands"
+peak month 2025-07,"1,320 events, 53% in Russia"
+completeness magnitude Mc (max curvature + 0.2),4.7
+"Gutenberg-Richter b-value (Aki MLE, M >= Mc)",1.14
+b-value standard error,0.003
+largest magnitude,9.1
+major earthquakes (M >= 6.5),1218
+major earthquakes pct,0.649
+shallow pct,79.04
+intermediate pct,16.33
+deep pct,4.63
+depth_fixed pct,46.43
+max depth (km),700.9
+distinct regions,439
+top 10 regions pct of all earthquakes,52.3
+top region,"Indonesia (22,784, 12.2%)"
+accuracy of always predicting 'not major' (%),99.35
+non-major to major ratio,153 : 1
+major earthquakes per complete year (mean),45.6
