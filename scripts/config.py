@@ -44,3 +44,6 @@ DUP_MAX_SEC           = 10    # two ids this close in time ...
 DUP_MAX_KM            = 10    # ... and distance are treated as one event
 DEPTH_SPIKE_RATIO     = 10    # a depth value is a "default" if its count is this many
 DEPTH_SPIKE_MIN_COUNT = 1000  # times its neighbours' median and at least this large
+
+# --- Step 10 live demo ---
+LIVE_START = "2026-10-08T10:00:00Z"  # live data = first seen AND occurred after this (UTC)

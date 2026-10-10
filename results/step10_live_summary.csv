@@ -1,0 +1,17 @@
+item,value
+raw rows,187588
+live start (UTC),2026-10-08 10:00:00+00:00
+last fetch (UTC),2026-10-10 12:36:03.972000+00:00
+rows first seen after live start,91
+of these: older events added late (excluded),22
+live events (M4.5+),69
+first live event (UTC),2026-10-08 10:07:28.642000+00:00
+last live event (UTC),2026-10-10 10:35:11.922000+00:00
+days covered,2.02
+live events per day,34.1
+largest live event,"M7.7 12 km WSW of Pitaloza Arriba, Panama (2026-10-09 17:56 UTC)"
+live events with M >= MAJOR_MAG,2
+cell-weeks with live events scored,24
+cell-weeks flagged by Isolation Forest,0
+flagged grid cells,
+model cut score,0.683454
