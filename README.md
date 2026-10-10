@@ -34,7 +34,7 @@ docs/       data_dictionary.md           slides/ report/ video/
 
 ## Commands
 ```
-python scripts/usgs_fetch.py --loop 300   # Step 1-2, keep running (not Colab), every 5 min
-python scripts/usgs_fetch.py              # one update only
+python scripts/usgs_fetch.py              # Step 1-2: fetch everything new up to now (run before using the data)
+python scripts/usgs_fetch.py --loop 300   # optional: keep running, update every 5 min
 python scripts/usgs_fetch.py --help       # all options
 ```
