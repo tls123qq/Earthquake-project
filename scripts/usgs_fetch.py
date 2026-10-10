@@ -163,14 +163,18 @@ def backfill(start, minmag):
 
 
 def fetch_updates(since, start, minmag):
-    """เหตุการณ์ที่ใหม่หรือถูกแก้หลังเวลา since"""
-    return fetch_all({
-        "format": "csv", "eventtype": "earthquake", "minmagnitude": minmag,
+    """เหตุการณ์ที่ใหม่ ถูกแก้ หรือถูกลบ หลังเวลา since"""
+    params = {
+        "format": "csv", "minmagnitude": minmag,
         "starttime": to_api_time(start),  # ถ้าไม่ใส่ API จะค้นแค่ 30 วันล่าสุด
         "updatedafter": to_api_time(since - OVERLAP),
-        "includedeleted": "true",
         "orderby": "time-asc",
-    })
+    }
+    updates = fetch_all({**params, "eventtype": "earthquake"})
+    # เหตุการณ์ที่ถูกลบต้องถามแยก: includedeleted=true ช้าจน timeout ถ้าย้อนเกินราว 1 วัน
+    # ส่วน includedeleted=only เร็ว และแถวที่ถูกลบมี type ว่าง จึงกรอง eventtype ไม่ได้
+    deleted = fetch_all({**params, "includedeleted": "only"})
+    return updates + deleted
 
 
 # ---------- รวมข้อมูล ----------
