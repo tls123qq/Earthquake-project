@@ -30,7 +30,7 @@ docs/       data_dictionary.md           slides/ report/ video/
 - Never use a random train/test split. Split by time per `config.py`.
 - Every number in slides/report must come from `results/*.csv`.
 - Figures: English, titled, labeled axes with units, saved at `FIG_DPI`.
-- Data files are git-ignored; share them via Google Drive.
+- Data CSVs are in git (`data/raw/quakes_m45_raw.csv`, ~42 MB). One person runs `usgs_fetch.py` and pushes; everyone else `git pull`.
 
 ## Commands
 ```

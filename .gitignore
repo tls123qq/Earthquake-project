@@ -1,5 +1,6 @@
-# Data is large: share via Google Drive, not GitHub
-data/**/*.csv
+# Data CSVs are tracked (raw file is ~42 MB); only the script's backups/temp files are ignored
+data/raw/backup/
+data/**/*.tmp
 models/*.joblib
 video/
 *.mp4
