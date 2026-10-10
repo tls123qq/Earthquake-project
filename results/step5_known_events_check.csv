@@ -1,0 +1,6 @@
+event,mag,in_cluster,cluster_rank,cluster_events,cluster_days,followers_30d_300km,capture
+Sumatra 2004,9.1,True,2,2326,273.6,278,0.98
+Tohoku 2011,9.1,True,1,2980,215.0,1910,1.0
+Turkey 2023,7.8,True,49,154,18.8,169,0.91
+Myanmar 2025,7.7,True,448,20,13.9,22,0.82
+Kamchatka 2025,8.8,True,3,1681,142.2,834,1.0
