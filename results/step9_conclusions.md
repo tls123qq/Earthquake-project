@@ -6,7 +6,7 @@
 2. Best model: 2_logreg_class_weight with a threshold tuned on validation (0.972). On test: precision 0.055, recall 0.142, F1 0.079, PR-AUC 0.041.
 3. It beats the naive baseline (F1 0.043, PR-AUC 0.012): F1 +0.037 (95% CI +0.013 to +0.061), PR-AUC +0.029 (95% CI +0.010 to +0.052); the baseline wins in 0.05% of resamples.
 4. PR-AUC 0.041 is 16x a random guess (0.0025), but 326 of 345 alarms are false and 115 of 134 majors are missed: useful for ranking risky cells, not as a warning system.
-5. Feature importance is noisy (only 102 validation positives); the features with a clear effect are n_major_12m, nbr_major_12m, i.e. recent major activity in the cell and its neighbours. Class weighting helped Logistic Regression more than LightGBM; SMOTE did not help. LightGBM was not tuned, so this comparison is indicative only.
+5. Feature importance is noisy (only 102 validation positives); the features with a clear effect are n_major_12m, nbr_major_12m, i.e. recent major activity in the cell and its neighbours. With LightGBM's settings tuned on validation and every model given its own tuned threshold, the best test F1 is 0.079 for Logistic Regression and 0.067 for LightGBM (class weight 0.067, SMOTE 0.063): the simpler model still wins, as expected with a weak signal.
 
 ## Anomaly detection (Step 6)
 

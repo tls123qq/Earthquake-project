@@ -5,9 +5,9 @@ model_id,model,imbalance,split,threshold,accuracy,precision,recall,f1,pr_auc,roc
 1_logreg_none,Logistic Regression,none,test,0.5,0.9975,0.0,0.0,0.0,0.0432,0.9057,0,0,0,134,54046
 2_logreg_class_weight,Logistic Regression,class_weight=balanced,val,0.5,0.8035,0.0105,0.8824,0.0207,0.0309,0.9162,8597,90,8507,12,34735
 2_logreg_class_weight,Logistic Regression,class_weight=balanced,test,0.5,0.8045,0.0109,0.8731,0.0216,0.0405,0.9091,10694,117,10577,17,43469
-3_lgbm_class_weight,LightGBM,class_weight=balanced,val,0.5,0.8895,0.0153,0.7255,0.03,0.0276,0.903,4837,74,4763,28,38479
-3_lgbm_class_weight,LightGBM,class_weight=balanced,test,0.5,0.8953,0.0178,0.7612,0.0347,0.0363,0.907,5742,102,5640,32,48406
-4_lgbm_smote,LightGBM,"SMOTE (train only, 10%)",val,0.5,0.9945,0.0467,0.0686,0.0556,0.0228,0.8948,150,7,143,95,43099
-4_lgbm_smote,LightGBM,"SMOTE (train only, 10%)",test,0.5,0.9951,0.0288,0.0299,0.0293,0.0265,0.8906,139,4,135,130,53911
+3_lgbm_class_weight,LightGBM (settings tuned on val),class_weight=balanced,val,0.5,0.8545,0.0129,0.8039,0.0253,0.0268,0.9106,6370,82,6288,20,36954
+3_lgbm_class_weight,LightGBM (settings tuned on val),class_weight=balanced,test,0.5,0.8591,0.0139,0.7985,0.0273,0.035,0.9131,7716,107,7609,27,46437
+4_lgbm_smote,LightGBM (settings tuned on val),"SMOTE (train only, 10%)",val,0.5,0.9866,0.0385,0.1961,0.0643,0.0265,0.9105,520,20,500,82,42742
+4_lgbm_smote,LightGBM (settings tuned on val),"SMOTE (train only, 10%)",test,0.5,0.9883,0.042,0.1716,0.0675,0.0291,0.8985,547,23,524,111,53522
 5_best_tuned_threshold,Best = 2_logreg_class_weight,threshold tuned on val,val,0.972,0.9919,0.0565,0.1569,0.0831,0.0309,0.9162,283,16,267,86,42975
 5_best_tuned_threshold,Best = 2_logreg_class_weight,threshold tuned on val,test,0.972,0.9919,0.0551,0.1418,0.0793,0.0405,0.9091,345,19,326,115,53720
