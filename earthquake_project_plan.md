@@ -112,9 +112,8 @@ Earthquake-project/
 ├── models/                      # B, C บันทึกโมเดล (.joblib, ไม่ขึ้น git)
 ├── figures/                     # ตั้งชื่อ stepX_ชื่อรูป.png เช่น step3_missing.png
 ├── results/                     # ตัวเลขผลลัพธ์ (.csv)
-├── docs/data_dictionary.md      # A
-├── slides/  report/  video/     # video/ ไม่ขึ้น git
-└── test/                        # ไฟล์ทดลองดึงข้อมูลรอบแรก (ไม่ได้ใช้ในงานหลัก)
+├── docs/                        # data_dictionary.md (A), stepX_*_explained.md อธิบาย Step 3-6
+└── slides/  report/  video/     # video/ ไม่ขึ้น git
 ```
 
 **กฎ:** แต่ละคนแก้เฉพาะไฟล์ของตัวเอง ถ้าต้องการให้คนอื่นแก้ ให้บอกในแชทกลุ่ม
