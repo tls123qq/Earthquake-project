@@ -1,0 +1,21 @@
+\contentsline {section}{\numberline {1}บทนำและความซับซ้อนของข้อมูล}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}ข้อมูลนี้ซับซ้อนตรงไหน}{3}{subsection.1.1}%
+\contentsline {section}{\numberline {2}การเก็บข้อมูล (API และข้อมูลสด)}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}แหล่งข้อมูล}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}สคริปต์ดึงข้อมูลแบบ incremental}{4}{subsection.2.2}%
+\contentsline {section}{\numberline {3}การสำรวจข้อมูล (Exploration)}{5}{section.3}%
+\contentsline {section}{\numberline {4}การเตรียมข้อมูล (Pre-processing)}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}การจัดการเชิงพื้นที่และเวลา}{7}{subsection.4.1}%
+\contentsline {section}{\numberline {5}เทคนิคการวิเคราะห์}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}ST-DBSCAN: จับกลุ่ม aftershock และ swarm}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Isolation Forest: หาช่องตาราง-สัปดาห์ที่ผิดปกติ}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Imbalanced classification: ทำนายแผ่นดินไหวใหญ่เดือนถัดไป}{9}{subsection.5.3}%
+\contentsline {section}{\numberline {6}การประเมินผลและผลลัพธ์}{10}{section.6}%
+\contentsline {subsection}{\numberline {6.1}ST-DBSCAN}{10}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Isolation Forest}{11}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Imbalanced classification}{12}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Live Demo}{14}{section.7}%
+\contentsline {section}{\numberline {8}การประยุกต์ใช้}{15}{section.8}%
+\contentsline {section}{\numberline {9}ข้อจำกัดและงานในอนาคต}{15}{section.9}%
+\contentsline {section}{เอกสารอ้างอิง}{16}{section*.22}%
+\contentsline {section}{\numberline {A}ภาคผนวก: หน้าที่ของสมาชิก}{18}{appendix.A}%

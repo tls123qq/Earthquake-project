@@ -3,11 +3,26 @@
 \documentclass[11pt,a4paper]{article}
 
 \usepackage{fontspec}
-\setmainfont[Scale=1.35]{Laksaman}          % TLWG Thai font, ships with TeX Live
-\setmonofont[Scale=0.95]{Latin Modern Mono}
+\setmainfont[Script=Thai, Scale=1.15]{Laksaman}          % TLWG Thai font, ships with TeX Live
+\setmonofont[Scale=1.15]{Latin Modern Mono}
+\usepackage{unicode-math}
+\setmathfont[Scale=1.15]{latinmodern-math.otf}
 \XeTeXlinebreaklocale "th"
 \XeTeXlinebreakskip = 0pt plus 1pt
-\linespread{1.15}
+\linespread{1.5}
+\setlength{\lineskiplimit}{-\maxdimen}      % even spacing in body text
+\setlength{\emergencystretch}{3em}
+
+\usepackage{etoolbox}
+\AtBeginEnvironment{tabular}{\setlength{\lineskiplimit}{0pt}}
+\AtBeginEnvironment{figure}{\setlength{\lineskiplimit}{0pt}\linespread{1.15}\selectfont}
+\AtBeginEnvironment{table}{\setlength{\lineskiplimit}{0pt}\linespread{1.15}\selectfont}
+\makeatletter
+\patchcmd{\@maketitle}{\vskip 1.5em}{\vskip 1.5cm}{}{}
+\patchcmd{\@maketitle}{\vskip 1em}{\vskip 1.5cm}{}{}
+\makeatother
+
+\usepackage[skip=0.6\baselineskip plus 2pt]{parskip}   % gap between paragraphs, no indent
 
 \usepackage[margin=2.3cm]{geometry}
 \usepackage{graphicx}
@@ -30,13 +45,14 @@
 \title{\textbf{Earthquake Analytics on Complex Data}\\[4pt]
 \large วิเคราะห์ข้อมูลแผ่นดินไหวทั่วโลกจาก USGS (M4.5 ขึ้นไป, ปี 2000 ถึงปัจจุบัน)}
 \author{%
-[ชื่อ-นามสกุล 1] \quad รหัส [xxxxxxxxxx]\\
-[ชื่อ-นามสกุล 2] \quad รหัส [xxxxxxxxxx]\\
-Peranut Tasanavinyu \quad รหัส [xxxxxxxxxx]}
+ปุณณวิชญ์ คล้ายรักษ์ \quad รหัส 6710504115\\[30pt]
+พีรณัฐ ทัศนวิญญู \quad รหัส 6710504191\\[30pt]
+ศรัณย์ ชัยกุลเสรีวงค์ \quad รหัส 6710504361}
 \date{ตุลาคม 2026}
 
 \begin{document}
-\maketitle
+{\setlength{\lineskiplimit}{0pt}\maketitle}
+\vspace{1.5cm}
 
 \begin{abstract}
 \noindent
@@ -49,6 +65,8 @@ Peranut Tasanavinyu \quad รหัส [xxxxxxxxxx]}
 (3) การจำแนกแบบข้อมูลไม่สมดุล ทำนายว่าเดือนถัดไปจะมีแผ่นดินไหว M6.5 ขึ้นไปหรือไม่ ได้ PR-AUC 0.041
 (16 เท่าของการเดาสุ่ม) และชนะ baseline อย่างมีนัยสำคัญ แต่ยังไม่แม่นพอจะใช้เป็นระบบเตือนภัย
 \end{abstract}
+
+\newpage
 
 \tableofcontents
 \newpage
@@ -158,7 +176,7 @@ Peranut Tasanavinyu \quad รหัส [xxxxxxxxxx]}
 
 \begin{table}[H]
 \centering\small
-\begin{tabular}{@{}lrr@{}}
+\begin{tabularx}{\textwidth}{@{}Xrr@{}}
 \toprule
 ขั้นตอน & แถวที่เหลือ & ตัดออก \\
 \midrule
@@ -169,9 +187,9 @@ Peranut Tasanavinyu \quad รหัส [xxxxxxxxxx]}
 \code{id} ซ้ำ: เก็บแถวที่ \code{updated} ใหม่สุด & 187{,}584 & 0 \\
 เหตุการณ์เดียวกันแต่มี 2 \code{id} ($\le 10$ วินาที และ $\le 10$ km): เก็บแถวที่ขนาดใหญ่กว่า & 187{,}547 & 37 \\
 \midrule
-\textbf{\code{quakes\_clean.csv}} (22 คอลัมน์) & \textbf{187{,}547} & \textbf{41} \\
+\code{quakes\_clean.csv} \textbf{(22 คอลัมน์)} & \textbf{187{,}547} & \textbf{41} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \caption{จำนวนแถวในแต่ละขั้นของการทำความสะอาด (\code{results/step3\_summary.csv})}
 \end{table}
 
@@ -314,6 +332,7 @@ Kamchatka 2025 & 8.8 & 3 & 1{,}681 & 1.00 \\
 
 \begin{table}[H]
 \centering\small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lrrrrr@{}}
 \toprule
 ชุด feature & Precision & Recall & F1 & PR-AUC & เทียบการเดาสุ่ม \\
@@ -322,7 +341,7 @@ A: มีขนาดสูงสุด (leakage) & 0.759 & 0.407 & 0.530 & 0.60
 \textbf{B: ไม่มีขนาดสูงสุด} & \textbf{0.424} & \textbf{0.259} & \textbf{0.322} & \textbf{0.274} & \textbf{106 เท่า} \\
 C: ไม่ใช้ขนาดเลย & 0.485 & 0.296 & 0.368 & 0.244 & 122 เท่า \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{ผล Isolation Forest บนชุด test ที่ contamination 0.002 (\code{results/anomaly\_metrics.csv})}
 \end{table}
 
@@ -343,6 +362,7 @@ C: ไม่ใช้ขนาดเลย & 0.485 & 0.296 & 0.368 & 0.244 & 122
 
 \begin{table}[H]
 \centering\small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lrrrrr@{}}
 \toprule
 โมเดล (threshold จาก validation) & Threshold & Precision & Recall & F1 & PR-AUC \\
@@ -353,7 +373,7 @@ C: ไม่ใช้ขนาดเลย & 0.485 & 0.296 & 0.368 & 0.244 & 122
 3. LightGBM + class weight & 0.952 & 0.054 & 0.090 & 0.067 & 0.035 \\
 4. LightGBM + SMOTE & 0.544 & 0.043 & 0.119 & 0.063 & 0.029 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{ผลบนชุด test เมื่อทุกโมเดลได้ threshold ที่ปรับบน validation (\code{results/step8\_tuned\_threshold\_comparison.csv}, \code{classification\_metrics.csv})}
 \end{table}
 
@@ -389,6 +409,7 @@ C: ไม่ใช้ขนาดเลย & 0.485 & 0.296 & 0.368 & 0.244 & 122
 
 \begin{table}[H]
 \centering\small
+\resizebox{\textwidth}{!}{%
 \begin{tabular}{@{}lrrl@{}}
 \toprule
 เวลาที่ดึง (UTC) & เหตุการณ์สดใหม่ & เหตุการณ์เก่าที่เพิ่งเข้ามา & เหตุการณ์เก่าสุดที่เพิ่งเข้ามา \\
@@ -396,7 +417,7 @@ C: ไม่ใช้ขนาดเลย & 0.485 & 0.296 & 0.368 & 0.244 & 122
 2026-10-08 10:02 & 0 & 1 & 2026-10-08 \\
 2026-10-10 12:36 & 69 & 21 & 2026-07-20 \\
 \bottomrule
-\end{tabular}
+\end{tabular}}
 \caption{ผลการดึงข้อมูลสด (\code{results/step10\_fetch\_runs.csv})}
 \end{table}
 
@@ -441,6 +462,8 @@ C: ไม่ใช้ขนาดเลย & 0.485 & 0.296 & 0.368 & 0.244 & 122
 
 %======================================================================
 \begin{thebibliography}{99}
+\phantomsection
+\addcontentsline{toc}{section}{\refname}
 %======================================================================
 \bibitem{usgs-api} U.S. Geological Survey. \textit{Earthquake Catalog API Documentation (FDSN Event Web Service)}. \url{https://earthquake.usgs.gov/fdsnws/event/1/}
 
@@ -481,10 +504,10 @@ C: ไม่ใช้ขนาดเลย & 0.485 & 0.296 & 0.368 & 0.244 & 122
 \begin{tabularx}{\textwidth}{@{}lX@{}}
 \toprule
 สมาชิก & งานที่ทำ \\
-\midrule
-[ชื่อ-นามสกุล 1] (tls123qq) & ทดลองดึงข้อมูลรอบแรก, แก้ปัญหา timeout ของ \code{usgs\_fetch.py}, Step 3 การเตรียมข้อมูล (\code{02\_preprocess.ipynb}), live demo รุ่นแรก \\
-[ชื่อ-นามสกุล 2] (UserNaito) & ออกแบบและเขียน \code{usgs\_fetch.py} และ \code{config.py}, Step 4 EDA, Step 5 ST-DBSCAN, Step 6 Isolation Forest, เอกสารอธิบาย Step 3--6, Step 11 ล็อกผล \\
-Peranut Tasanavinyu & Step 7 ตาราง feature และการตรวจ leakage, Step 8 imbalanced classification และการปรับ LightGBM, Step 9 การประเมินผล, Step 10 live demo \\
+\midrule\relax
+ปุณณวิชญ์ คล้ายรักษ์ & ทดลองดึงข้อมูลรอบแรก, แก้ปัญหา timeout ของ \code{usgs\_fetch.py}, Step 3 การเตรียมข้อมูล (\code{02\_preprocess.ipynb}), live demo รุ่นแรก \\\relax
+ศรัณย์ ชัยกุลเสรีวงค์ & ออกแบบและเขียน \code{usgs\_fetch.py} และ \code{config.py}, Step 4 EDA, Step 5 ST-DBSCAN, Step 6 Isolation Forest, เอกสารอธิบาย Step 3--6, Step 11 ล็อกผล \\
+พีรณัฐ ทัศนวิญญู & Step 7 ตาราง feature และการตรวจ leakage, Step 8 imbalanced classification และการปรับ LightGBM, Step 9 การประเมินผล, Step 10 live demo \\
 \bottomrule
 \end{tabularx}
 \caption{หน้าที่ของสมาชิก (จาก commit ใน GitHub) ให้สมาชิกตรวจและแก้ให้ตรงก่อนส่ง}
