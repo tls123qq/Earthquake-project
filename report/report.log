@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.8.25)  13 OCT 2026 15:28
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.8.25)  18 OCT 2026 13:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1095,40 +1095,40 @@ LaTeX Font Info:    Font shape `TU/Laksaman(0)/b/n' will be
 LaTeX Font Info:    Font shape `TU/LatinModernMono(0)/m/n' will be
 (Font)              scaled to size 12.59242pt on input line 117.
  [3]
-File: figures/step4_world_map.png Graphic file (type bmp)
-<figures/step4_world_map.png>
+File: ../figures/step4_world_map.png Graphic file (type bmp)
+<../figures/step4_world_map.png>
  [4]
-File: figures/step4_events_over_time.png Graphic file (type bmp)
-<figures/step4_events_over_time.png>
-File: figures/step4_magnitude_hist.png Graphic file (type bmp)
-<figures/step4_magnitude_hist.png>
+File: ../figures/step4_events_over_time.png Graphic file (type bmp)
+<../figures/step4_events_over_time.png>
+File: ../figures/step4_magnitude_hist.png Graphic file (type bmp)
+<../figures/step4_magnitude_hist.png>
  [5]
-File: figures/step4_depth_hist.png Graphic file (type bmp)
-<figures/step4_depth_hist.png>
-File: figures/step4_top_regions.png Graphic file (type bmp)
-<figures/step4_top_regions.png>
-File: figures/step3_pipeline.png Graphic file (type bmp)
-<figures/step3_pipeline.png>
+File: ../figures/step4_depth_hist.png Graphic file (type bmp)
+<../figures/step4_depth_hist.png>
+File: ../figures/step4_top_regions.png Graphic file (type bmp)
+<../figures/step4_top_regions.png>
+File: ../figures/step3_pipeline.png Graphic file (type bmp)
+<../figures/step3_pipeline.png>
  [6]
-File: figures/step3_depth_fixed.png Graphic file (type bmp)
-<figures/step3_depth_fixed.png>
-File: figures/step3_missing_by_year.png Graphic file (type bmp)
-<figures/step3_missing_by_year.png>
+File: ../figures/step3_depth_fixed.png Graphic file (type bmp)
+<../figures/step3_depth_fixed.png>
+File: ../figures/step3_missing_by_year.png Graphic file (type bmp)
+<../figures/step3_missing_by_year.png>
  [7]
-File: figures/step5_kdistance.png Graphic file (type bmp)
-<figures/step5_kdistance.png>
-File: figures/step5_param_search.png Graphic file (type bmp)
-<figures/step5_param_search.png>
+File: ../figures/step5_kdistance.png Graphic file (type bmp)
+<../figures/step5_kdistance.png>
+File: ../figures/step5_param_search.png Graphic file (type bmp)
+<../figures/step5_param_search.png>
  [8]
-File: figures/step7_class_balance.png Graphic file (type bmp)
-<figures/step7_class_balance.png>
+File: ../figures/step7_class_balance.png Graphic file (type bmp)
+<../figures/step7_class_balance.png>
  [9]
-File: figures/step5_clusters_map.png Graphic file (type bmp)
-<figures/step5_clusters_map.png>
+File: ../figures/step5_clusters_map.png Graphic file (type bmp)
+<../figures/step5_clusters_map.png>
 
 [10]
-File: figures/step5_top_clusters.png Graphic file (type bmp)
-<figures/step5_top_clusters.png>
+File: ../figures/step5_top_clusters.png Graphic file (type bmp)
+<../figures/step5_top_clusters.png>
 
 Underfull \hbox (badness 4872) in paragraph at lines 345--345
 []\TU/Laksaman(0)/b/n/10 ตาราง ที่ 4: |\TU/Laksaman(0)/m/n/10 ผล Isolation Fore
@@ -1136,10 +1136,10 @@ st บน ชุด test ที่ contamination 0.002 (\TU/LatinModernMono(0)/m
  []
 
 [11]
-File: figures/step6_metrics.png Graphic file (type bmp)
-<figures/step6_metrics.png>
-File: figures/step6_anomaly_timeline.png Graphic file (type bmp)
-<figures/step6_anomaly_timeline.png>
+File: ../figures/step6_metrics.png Graphic file (type bmp)
+<../figures/step6_metrics.png>
+File: ../figures/step6_anomaly_timeline.png Graphic file (type bmp)
+<../figures/step6_anomaly_timeline.png>
 
 Underfull \hbox (badness 1648) in paragraph at lines 377--377
 []\TU/Laksaman(0)/b/n/10 ตาราง ที่ 5: |\TU/Laksaman(0)/m/n/10 ผล บน ชุด test เม
@@ -1148,15 +1148,15 @@ Underfull \hbox (badness 1648) in paragraph at lines 377--377
  []
 
 [12]
-File: figures/step9_pr.png Graphic file (type bmp)
-<figures/step9_pr.png>
-File: figures/step9_cm.png Graphic file (type bmp)
-<figures/step9_cm.png>
-File: figures/step9_importance.png Graphic file (type bmp)
-<figures/step9_importance.png>
+File: ../figures/step9_pr.png Graphic file (type bmp)
+<../figures/step9_pr.png>
+File: ../figures/step9_cm.png Graphic file (type bmp)
+<../figures/step9_cm.png>
+File: ../figures/step9_importance.png Graphic file (type bmp)
+<../figures/step9_importance.png>
  [13]
-File: figures/step10_live_map.png Graphic file (type bmp)
-<figures/step10_live_map.png>
+File: ../figures/step10_live_map.png Graphic file (type bmp)
+<../figures/step10_live_map.png>
  [14] [15]
 LaTeX Font Info:    Font shape `TU/Laksaman(0)/m/it' will be
 (Font)              scaled to size 12.59242pt on input line 468.
@@ -1174,8 +1174,8 @@ Package rerunfilecheck Info: File `report.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  17908 strings out of 402629
- 331502 string characters out of 5439127
- 889082 words of memory out of 5000000
+ 331961 string characters out of 5439127
+ 890082 words of memory out of 5000000
  46767 multiletter control sequences out of 15000+600000
  630798 words of font info for 100 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
